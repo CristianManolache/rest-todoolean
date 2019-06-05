@@ -11,7 +11,7 @@ body {
 }
 /* CONTAINER */
 .container {
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 15px;
   width: 400px;
   padding: 10px;
@@ -57,10 +57,25 @@ body {
 .content::-webkit-scrollbar {
   display: none;
 }
-/* .content ul {
-
+.content ul {
+  padding: 10px 10px;
+  font-size: 20px;
 }
-.item {
+#lista {
+  list-style: none;
+  width: 380px;
+  min-height: 50px;
+}
+#lista li {
+  padding: 5px 5px;
+  border: 1px solid black;
+}
+#lista i {
+  padding: 5px 5px;
+}
+
+
+/*.item {
   width: 380px;
   min-height: 45px;
   list-style: none;
