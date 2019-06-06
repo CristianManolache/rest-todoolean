@@ -72,8 +72,11 @@ body {
 }
 #lista i {
   padding: 5px 5px;
+  cursor: pointer;
 }
-
+span {
+  cursor: pointer;
+}
 
 /*.item {
   width: 380px;
