@@ -18,7 +18,7 @@ $(document).ready(function() {
         'success': function(data) {
           for (var i = 0; i < data.length; i++) {
             var listcontent = data[i];
-            $('#lista').append('<li><span id="' + listcontent.id '> + bin</span> ' + listcontent.text + '</li>'  );
+            $('#lista').append('<li><span data-id="'+ listcontent.id +'"><i class="fas fa-trash-alt"></i></span>' + listcontent.text + '</li>');
           }
         },
         'error': function() {
@@ -49,7 +49,7 @@ $(document).ready(function() {
   }
   // Ajax delete
   function task_delete(cancel) {
-    $('#lista').on('click', 'i' , function() {
+    $('#lista').on('click', 'span ' , function() {
       var id_delete = $(this).attr('data-id');
       $.ajax({
         'url': url_base + id_delete,

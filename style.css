@@ -3,6 +3,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Acme', sans-serif;
 }
 body {
   background-color: #cecece;
@@ -68,7 +70,10 @@ body {
 }
 #lista li {
   padding: 5px 5px;
+  margin-bottom: 5px;
   border: 1px solid black;
+  border-radius: 30px;
+  background-color: #c4f427;
 }
 #lista i {
   padding: 5px 5px;
@@ -76,51 +81,14 @@ body {
 }
 span {
   cursor: pointer;
+  margin-right: 20px;
+  border-right: 1px solid red;
 }
-
-/*.item {
-  width: 380px;
-  min-height: 45px;
-  list-style: none;
-}
-.item i.co {
-  position: absolute;
+span > .fas:hover {
+  color: #fefefe;
   font-size: 25px;
-  padding-left: 5px;
-  left: 15px;
-  top: 10px;
+  transition-duration: 0.5s;
 }
-.item i.co:hover {
-  cursor: pointer;
-}
-.fa-check-circle {
-  color: blue;
-}
-.item p.text {
-    position: absolute;
-    padding:0;
-    margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
-    background-color: #FFF;
-    max-width:285px;
-}
-.lineThrough {
-    text-decoration: line-through;
-    color : #ccc;
-}
-.item i.de {
-    position: absolute;
-    font-size: 25px;
-    right:15px;
-    top:10px;
-}
-.item i.de:hover {
-    color:#af0000;
-    cursor: pointer;
-} */
-
 /* ADD ITEM */
 .add {
   width: 380px;
